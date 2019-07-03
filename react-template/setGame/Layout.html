@@ -1,0 +1,111 @@
+<HTML>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Set Game is a speed game, where the objective is to find as many sets as you can.
+        A SET is three cards where each feature, when looked at individually, 
+        is either all the same OR all different. Each card contains four features:
+        color, shape, number and shading">
+    <meta name="keywords" content="Set Game">
+    <meta name="author" content="Elroi, Cefi, Maayan, Zoe, Jonatan, Elad, Deborah, Louis">
+    <title>
+        Set
+    </title>
+    <link rel="Icon" href="./img/logo.png">
+    <!-- cdn links -->
+    <script src="https://fb.me/react-0.14.0.js"></script>
+    <script src="https://fb.me/react-dom-0.14.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.25/browser.min.js"></script>
+    <!-- offline links -->
+
+    <!-- css files -->
+    <link rel="stylesheet" href="./css/shapes.css">
+    <link rel="stylesheet" href="./css/layout.css">
+
+</head>
+
+<body>
+    <div id="root">
+
+        <div id="app">
+            <div class="header">
+                <div class="information">
+                    <div><B>Available Sets: </B><span>00</span></div>
+                    <div><B>Matches: </B><span>00</span></div>
+                </div>
+                <div class="buttons">
+                    <button>Reset</button>
+                </div>
+            </div>
+            <div class="cardsWrapper">
+                <div class="grid">
+                    <div class="card selected">
+                        <div class="rectangle filled red ishidden"></div>
+                        <div class="rectangle striped red"></div>
+                        <div class="rectangle nofill blue ishidden"></div>
+                    </div>
+                    <div class="card incorrect">
+                        <div class="rectangle red"></div>
+                        <div class="leaf striped green"></div>
+                        <div class="pill blue"></div>
+                    </div>
+                    <div class="card correct">
+                        <div class="leaf red"></div>
+                        <div class="rectangle striped green"></div>
+                        <div class="pill blue"></div>
+                    </div>
+                    <div class="card ">
+                        <div class="rectangle filled red ishidden"></div>
+                        <div class="pill striped green"></div>
+                        <div class="rectangle nofill blue ishidden"></div>
+                    </div>
+                    <div class="card">
+                        <div class="rectangle red"></div>
+                        <div class="leaf striped green"></div>
+                        <div class="pill blue"></div>
+                    </div>
+                    <div class="card">
+                        <div class="leaf green striped"></div>
+                        <div class="rectangle striped red"></div>
+                        <div class="pill blue nofill"></div>
+                    </div>
+                    <div class="card ">
+                        <div class="rectangle filled red ishidden"></div>
+                        <div class="rectangle striped red"></div>
+                        <div class="rectangle nofill blue ishidden"></div>
+                    </div>
+                    <div class="card">
+                        <div class="rectangle red"></div>
+                        <div class="leaf striped green"></div>
+                        <div class="pill blue"></div>
+                    </div>
+                    <div class="card">
+                        <div class="leaf red"></div>
+                        <div class="rectangle striped red"></div>
+                        <div class="pill blue"></div>
+                    </div>
+                    <div class="card">
+                        <div class="rectangle filled green ishidden"></div>
+                        <div class="rectangle striped red ishidden"></div>
+                        <div class="rectangle nofill blue"></div>
+                    </div>
+                    <div class="card">
+                        <div class="rectangle nofill green "></div>
+                        <div class="leaf filled red"></div>
+                        <div class="pill striped blue"></div>
+                    </div>
+                    <div class="card">
+                        <div class="leaf red"></div>
+                        <div class="rectangle striped red"></div>
+                        <div class="pill blue"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">/ Team 3 /</div>
+        </div>
+    </div>
+    <!-- js file -->
+    <script type="text/babel" src="./logic.js"></script>
+</body>
+
+</HTML>
